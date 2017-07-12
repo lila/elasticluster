@@ -15,5 +15,5 @@
     - local
   hosts: all
   # by default these are no-op (empty task list)
-  roles: []
+  roles: [r]
   tasks: []

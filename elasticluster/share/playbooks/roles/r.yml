@@ -1,0 +1,6 @@
+---
+
+- name: R software
+  hosts: all
+  roles:
+    - r
