@@ -343,8 +343,12 @@ class GoogleCloudProvider(AbstractCloudProvider):
                 "kind": "compute#metadata",
                 "items": [
                     {
-                        "key": "sshKeys",
+                        "key": "ssh-keys",
                         "value": "%s:%s" % (username, public_key_content)
+                    },
+                    {
+                        "key": "block-project-ssh-keys",
+                        "value": "false"
                     }
                 ]
             }
